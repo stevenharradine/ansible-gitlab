@@ -3,6 +3,10 @@
   sudo: true
   remote_user: douglas
   tasks:
+  - name: change hostname
+    hostname:
+      name: GitLab
+
   - name: Download GitLab omnibus repo setup
     get_url:
       url: https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh
