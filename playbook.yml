@@ -2,10 +2,17 @@
 - hosts: gitlab
   sudo: true
   remote_user: douglas
+  vars:
+    hostname: GitLab
   tasks:
   - name: change hostname
     hostname:
-      name: GitLab
+      name: "{{ hostname }}"
+
+  - name: update hosts
+    lineinfile:
+      dest: /etc/hosts
+      line: "127.0.1.1       {{ hostname }}"
 
   - name: Download GitLab omnibus repo setup
     get_url:
