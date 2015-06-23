@@ -1,3 +1,5 @@
 ---
 - src: https://github.com/stevenharradine/ansible-hostname
+  path: /etc/ansible/roles/stevenharradine
 - src: https://github.com/stevenharradine/ansible-gitlab-omnibus
+  path: /etc/ansible/roles/stevenharradine
