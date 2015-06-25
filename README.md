@@ -1,2 +1,2 @@
-# ansible-gitlab
-Ansible playbook to build gitlab
+# playbook-gitlab
+Playbook to build GitLab
